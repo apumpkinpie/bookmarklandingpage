@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="res/images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <script defer src="script.js"></script>
+  <title>Frontend Mentor | Bookmark landing page</title>
+</head>
+
+<body>
+  <nav class="nav nav--padding">
+    <img src="res/images/logo-bookmark.svg" alt="Bookmark Logo" class="logo" />
+    <div class="menu-btn-container"><button class="menu-btn btn"></button></div>
+    <div class="header-nav nav--links ">
+      <a href="#features" class="nav--link mobile-nav-link">Features</a>
+      <a href="#download" class="nav--link mobile-nav-link">Pricing</a>
+      <a href="#FAQ" class="nav--link mobile-nav-link">Contact</a>
+      <a href="#" class="nav--link mobile-nav-link login-link">Login</a>
+    </div>
+  </nav>
+  <main class="main-section">
+    <section class="hero">
+      <div class="hero-summary">
+        <h1 class="hero-header header header-one">A Simple Bookmark Manager</h1>
+        <p class="hero-summary-text summary-text">A clean and simple interface to organize your favourite websites. Open
+          a new
+          browser tab and see your sites load instantly. Try it for free.</p>
+        <div class="hero-btns">
+          <button class="hero-main-btn hero-btn btn">Get it on Chrome</button>
+          <button class="hero-secondary-btn hero-btn btn">Get it on Firefox</button>
+        </div>
+      </div>
+      <div class="hero-imgs">
+        <img src="res/images/illustration-hero.svg" alt="" class="hero-img" aria-label="hidden">
+      </div>
+    </section>
+    <section id="features" class="features section-build">
+      <div class="feature-intro section-intro">
+        <h2 class="features-header header-two">Features</h2>
+        <p class="features-summary summary-text">Our aim is to make it quick and easy for you to access your favourite
+          websites.
+          Your bookmarks sync between your devices so you can access them on the go.</p>
+      </div>
+      <div class="features-tabs-container">
+        <ul class="feature-tabs-list">
+          <li class="feature-tab feature-tab-btn-clicked" data-tab="1"><button tabindex=0
+              class="feature-tab-btn btn">Simple Bookmarking</button></li>
+          <li class="feature-tab" data-tab="2"><button tabindex=0 class="feature-tab-btn btn">Speedy Searching</button>
+          </li>
+          <li class="feature-tab" data-tab="3"><button tabindex=0 class="feature-tab-btn btn">Easy Sharing</button></li>
+        </ul>
+        <div class="features-content-container">
+          <article class="feature feature-1">
+            <div class="feature-img-container"><img src="res/images/illustration-features-tab-1.svg" alt=""
+                class="feature-img" aria-label="hidden"></div>
+            <div class="feature-summary">
+              <h2 class="feature-header header-two">Bookmark in one click</h2>
+              <p class="feature-summary-text summary-text ">Organize your bookmarks however you like. Our simple
+                drag-and-drop
+                interface
+                gives you complete control over how you manage your favourite sites.</p>
+              <button class="feature-btn btn more-info-btn">More info</button>
+            </div>
+          </article>
+          <article class="feature feature-2 hidden">
+            <div class="feature-img-container"><img src="res/images/illustration-features-tab-2.svg" alt=""
+                class="feature-img" aria-label="hidden"></div>
+            <div class="feature-summary">
+              <h2 class="feature-header header-two">Intelligent search</h2>
+              <p class="feature-summary-text summary-text ">Our powerful search feature will help you find saved sites
+                in no time
+                at all. No need to trawl through all of your bookmarks.</p>
+              <button class="feature-btn btn more-info-btn">More info</button>
+            </div>
+          </article>
+          <article class="feature feature-3 hidden">
+            <div class="feature-img-container"><img src="res/images/illustration-features-tab-3.svg" alt=""
+                class="feature-img" aria-label="hidden"></div>
+            <div class="feature-summary">
+              <h2 class="feature-header header-two">Share your bookmarks</h2>
+              <p class="feature-summary-text summary-text ">Easily share your bookmarks and collections with others.
+                Create a
+                shareable
+                link that you can send at the click of a button.</p>
+              <button class="feature-btn btn more-info-btn">More info</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="download" class="download section-build">
+      <div class="download-intro section-intro">
+        <h2 class="download-header header-two">Download the extension</h2>
+        <p class="download-summary summary-text">We’ve got more browsers in the pipeline. Please do let us know if
+          you’ve
+          got a favourite you’d like us to prioritize.</p>
+      </div>
+      <div class="download-content-container">
+        <article class="download-card download-1">
+          <div class="download-details">
+            <img src="res/images/logo-chrome.svg" alt="Chrome logo" class="download-img">
+            <div class="download-summary">
+              <h3 class="download-header header-three">Add to Chrome</h3>
+              <p class="download-version">Minimum version 62
+            </div>
+            <img src="res/images/bg-dots.svg" alt="" aria-label="hidden">
+            </p>
+          </div>
+          <button class="download-btn btn">Add & Install Extension</button>
+        </article>
+        <article class="download-card download-2">
+          <div class="download-details">
+            <img src="res/images/logo-firefox.svg" alt="Firefox logo" class="download-img">
+            <div class="download-summary">
+              <h3 class="download-header header-three">Add to Firefox</h3>
+              <p class="download-version">Minimum version 55
+            </div>
+            <img src="res/images/bg-dots.svg" alt="" aria-label="hidden">
+            </p>
+          </div>
+          <button class="download-btn btn">Add & Install Extension</button>
+        </article>
+        <article class="download-card download-3">
+          <div class="download-details">
+            <img src="res/images/logo-opera.svg" alt="Opera logo" class="download-img">
+            <div class="download-summary">
+              <h3 class="download-header header-three">Add to Opera</h3>
+              <p class="download-version">Minimum version 46
+            </div>
+            <img src="res/images/bg-dots.svg" alt="" aria-label="hidden">
+            </p>
+          </div>
+          <button class="download-btn btn">Add & Install Extension</button>
+        </article>
+      </div>
+    </section>
+    <section id="FAQ" class="FAQ section-build">
+      <div class="FAQ-intro section-intro">
+        <h2 class="FAQ-header header-two">Frequently Asked Questions</h2>
+        <p class="FAQ-summary summary-text">Here are some of our FAQs. If you have any other questions you’d like
+          answered please feel free to email us.</p>
+      </div>
+      <div class="FAQ-container">
+        <details class="FAQ-box">
+          <summary class="FAQ-question"><span class="FAQ-question-text">What is Bookmark?</span>
+            <img src="res/images/icon-arrow.svg" alt="" aria-label="hidden">
+          </summary>
+          <p class="FAQ-answer-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+            justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+          </p>
+        </details>
+        <details class="FAQ-box">
+          <summary class="FAQ-question"><span class="FAQ-question-text">How can I request a new browser?
+            </span>
+            <img src="res/images/icon-arrow.svg" alt="" aria-label="hidden">
+          </summary>
+          <p class="FAQ-answer-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+            justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+          </p>
+        </details>
+        <details class="FAQ-box">
+          <summary class="FAQ-question"><span class="FAQ-question-text">Is there a mobile app?</span>
+            <img src="res/images/icon-arrow.svg" alt="" aria-label="hidden">
+          </summary>
+          <p class="FAQ-answer-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+            justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+          </p>
+        </details>
+        <details class="FAQ-box">
+          <summary class="FAQ-question"><span class="FAQ-question-text">What about other Chromium browsers?</span>
+            <img src="res/images/icon-arrow.svg" alt="" aria-label="hidden">
+          </summary>
+          <p class="FAQ-answer-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+            justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+          </p>
+        </details>
+      </div>
+      <button class="FAQ-btn btn more-info-btn">More info</button>
+    </section>
+
+  </main>
+  <section class="CTA section-build">
+    <div class="CTA-summary section-summary">
+      <p class="join-count">35,000+ Already Joined</p>
+      <h2 class="CTA-header header-two">Stay up-to-date with what we’re doing
+      </h2>
+    </div>
+    <form action="" method="get" class="CTA-form">
+      <div class="CTA-form-email-container">
+        <input type="email" name="email" id="email" required placeholder="Enter your email address"
+          class="CTA-form-email">
+      </div>
+      <div class="CTA-form-btn-container">
+        <input type="submit" value="Contact Us" class="CTA-form-btn btn">
+      </div>
+    </form>
+  </section>
+  <footer class="footer">
+    <nav class="footer-nav  nav--padding">
+      <div class="footer-nav-links nav--links">
+        <img class="footer-logo" src="res/images/logo-bookmark.svg" alt="Bookmark logo">
+        <a href="#features" class="nav--link footer-nav-link">Features</a>
+        <a href="#download" class="nav--link footer-nav-link">Pricing</a>
+        <a href="#FAQ" class="nav--link footer-nav-link">Contact</a>
+      </div>
+      <div class="footer-socials">
+        <a href="#" class="social-logo"><img src="res/images/icon-facebook.svg" alt="Facebook logo"></a>
+        <a href="#" class="social-logo"><img src="res/images/icon-twitter.svg" alt="Twitter logo"></a>
+      </div>
+    </nav>
+  </footer>
+</body>
+
+</html>
